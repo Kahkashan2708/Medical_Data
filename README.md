@@ -1,35 +1,30 @@
-# Medical_Data (TF-IDF Visualization and Explanation)
+# Data Visualisation Notebook
 
-This project contains a Jupyter Notebook that explains and visualizes the **TF-IDF (Term Frequency-Inverse Document Frequency)** algorithm using Python. It is ideal for students, researchers, and developers interested in natural language processing (NLP) and text mining.
+This Jupyter Notebook presents an exploratory data analysis and visualization pipeline using Python. It includes detailed visual representations of data trends, distributions, and relationships between variables, utilizing popular data science libraries.
 
----
+##  Notebook Overview
 
-## Files
+- **File Name:** `Data_Visualised.ipynb`
+- **Purpose:** Perform data cleaning and visualize key trends and insights from the dataset.
+- **Libraries Used:**
+  - `pandas` for data manipulation
+  - `matplotlib` and `seaborn` for static plotting
+  - `plotly` for interactive charts
+  - `numpy` for numerical operations
 
-- **Data_Visualised.ipynb**: The main Jupyter Notebook that:
-  - Explains Term Frequency (TF), Inverse Document Frequency (IDF), and TF-IDF
-  - Calculates TF-IDF manually and using `sklearn`
-  - Visualizes word importance using bar charts
+## Features
 
----
+- Data loading and inspection
+- Data preprocessing (missing values, data types)
+- Univariate and multivariate analysis
+- Correlation heatmaps
+- Customizable plots (bar charts, scatter plots, histograms, box plots, etc.)
+- Interactive visualizations with Plotly
 
-##  What is TF-IDF?
+## How to Run
 
-TF-IDF is a statistical measure used to evaluate how important a word is to a document in a collection or corpus. It is widely used in NLP tasks like:
-- Text classification
-- Search engines
-- Document similarity
-- Keyword extraction
+1. Clone this repository or download the notebook.
+2. Ensure Python 3.x is installed along with the required libraries:
+   ```bash
+   pip install pandas numpy matplotlib seaborn plotly
 
-\[
-\text{TF-IDF}(t, d) = \text{TF}(t, d) \times \log\left(\frac{N}{1 + df(t)}\right)
-\]
-
----
-
-##  Requirements
-
-Install the required Python libraries before running the notebook:
-
-```bash
-pip install numpy pandas matplotlib scikit-learn
